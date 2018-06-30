@@ -16,7 +16,7 @@
     <script src="http://apps.bdimg.com/libs/highlight.js/8.6/highlight.min.js"></script>
 </head>
 <body>
-<div id="header"><h1><a href="#/" class="blog_title">翻墙党ShadowsocksR</a></h1>
+<div id="header"><h1><a href="/" class="blog_title">翻墙党ShadowsocksR</a></h1>
 </div>
 <div id="container">
     <center><img src="loading.gif" alt="loading" class="loading"></center>
@@ -24,15 +24,15 @@
 <script type="text/ractive" id="listTpl">
     <ul class="postlist">
         {{#posts}}
-        <li class="postlist"><a href="#post/{{number}}">{{title}}</a>
+        <li class="postlist"><a href="post/{{number}}">{{title}}</a>
         <span class="datetime">
         <!--<img src="{{user.avatar_url}}&s=18" class="avatar">.-->
         <a href="{{user.html_url}}">{{user.login}}</a>.
         {{formatTime(created_at)}}</span></li>
         {{/posts}}
     </ul>
-    {{#prev}}<a href="#p{{page-1}}" class="prev">上一页</a>{{/prev}}
-    {{#next}}<a href="#p{{page+1}}" class="next">下一页</a>{{/next}}
+    {{#prev}}<a href="p{{page-1}}" class="prev">上一页</a>{{/prev}}
+    {{#next}}<a href="p{{page+1}}" class="next">下一页</a>{{/next}}
 </script>
 <script type="text/ractive" id="detailTpl">
     {{#post}}
